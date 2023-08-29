@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02E716E85317AFD6EF436A75FF463F26 /* CountdownLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E66A731EED5B70891077833275C415BD /* CountdownLabel-dummy.m */; };
+		0DFCCB0B49D8915F4FA82041D52AD397 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		17C07CAAFA857E76ED4B78AD2294E3C2 /* LTMorphingLabel+Pixelate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673BAE53BA24AF7E837730C996B5362 /* LTMorphingLabel+Pixelate.swift */; };
+		22C19D7574BD2995C688F1E1C92EEF00 /* LTCharacterLimbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D46F55FB86F8950FA6F4D9EECDEA7FD /* LTCharacterLimbo.swift */; };
+		24EB0B60E277BABF071537B99C192FC9 /* LTMorphingLabel+Evaporate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC8ADF09067ADA574CE40996153A3EC /* LTMorphingLabel+Evaporate.swift */; };
+		34DC8C2277660E4DD5C6575C0F389E48 /* LTStringDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCCDBE9F40733AA0FA2F921617231B /* LTStringDiffResult.swift */; };
+		408588ECEC8C80735B8FCE421258C071 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		5130E7A0408A6CDF8DE7B58C0A33B8EF /* LTMorphingLabel+Fall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA434C24A1699C617A1C480A314052 /* LTMorphingLabel+Fall.swift */; };
+		664296427A01653CCB20CD69B14EDFDB /* Pods-Bistrodengi-WaitingView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF8AD8B2E0E893F36109389A2436D99 /* Pods-Bistrodengi-WaitingView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67DA85676B4243BEF9311EA0920150B5 /* CountdownLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCAC15C1E0FCB6014FCA2DC92B30F9A /* CountdownLabel.swift */; };
+		70156C2102D445B91CB0711BD031308C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		7187E7BE95B7F5509970B68CF5C9A3CF /* LTMorphingLabel+Anvil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D4386342B1AABCADB2F448E08A6D3 /* LTMorphingLabel+Anvil.swift */; };
+		8804263766950B8625CC9D40F3B9F963 /* LTMorphingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AF5C5CC6F697A76355DFDA369585FB /* LTMorphingEffect.swift */; };
+		9A208774406A4DA22204E3146AF01524 /* LTMorphingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E9FE9E17AFF9A742C8522C840E1343 /* LTMorphingLabel.swift */; };
+		A921FA9C2269ACB1CA9CF81DB82E71AC /* CountdownLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A6F931A864FE46E4BB82882C47251F0 /* CountdownLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A97979D2BB10806FD9FCF57953D5206B /* LTMorphingLabel+Sparkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683414D25E3FDD3AAEB8B60528751745 /* LTMorphingLabel+Sparkle.swift */; };
+		AD23A72E632F2CC9135154B4D49E93B6 /* LTEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB0834A5FCB9F6709F755BE2DA4C1E4 /* LTEmitterView.swift */; };
+		C93EB3B1BA2B88C5AE7346F90E95ED85 /* LTCharacterDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769AC711D0F4743DD59A1AAC2B0B5904 /* LTCharacterDiffResult.swift */; };
+		CA412212CBD40BB65586FB292863AA55 /* LTEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CE2BF2D75D79D76C405A678E181E10 /* LTEasing.swift */; };
+		EE6C16C3A985298398508A8EEE20AAC1 /* LTMorphingLabel+Burn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF885DD5D553DBB40C7A2250A7A86B9 /* LTMorphingLabel+Burn.swift */; };
+		FE8039A4F9581AF07ABB73ADE1B4C492 /* Pods-Bistrodengi-WaitingView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB934A82B499BEECEC7288E3AA13015C /* Pods-Bistrodengi-WaitingView-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CE12CF505A97668E0F4EE1174AA05F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DD526091D33E33B86AFCF37F8478384;
+			remoteInfo = CountdownLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08CF41D624D5BFB973CE379173826A75 /* CountdownLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CountdownLabel.release.xcconfig; sourceTree = "<group>"; };
+		09A0F696C4F4F468D32A912899465A5D /* Pods-Bistrodengi-WaitingView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bistrodengi-WaitingView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		12CB81B50614B5DA40108ABDDB0F47E8 /* CountdownLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CountdownLabel-Info.plist"; sourceTree = "<group>"; };
+		1CCAC15C1E0FCB6014FCA2DC92B30F9A /* CountdownLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountdownLabel.swift; path = CountdownLabel/CountdownLabel.swift; sourceTree = "<group>"; };
+		21BCCDBE9F40733AA0FA2F921617231B /* LTStringDiffResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTStringDiffResult.swift; path = CountdownLabel/LTMorphingLabel/LTStringDiffResult.swift; sourceTree = "<group>"; };
+		26CE2BF2D75D79D76C405A678E181E10 /* LTEasing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTEasing.swift; path = CountdownLabel/LTMorphingLabel/LTEasing.swift; sourceTree = "<group>"; };
+		2788EDDAAB88B3AC5736C3BA9CF007BF /* Pods-Bistrodengi-WaitingView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bistrodengi-WaitingView-Info.plist"; sourceTree = "<group>"; };
+		27E9FE9E17AFF9A742C8522C840E1343 /* LTMorphingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingLabel.swift; path = CountdownLabel/LTMorphingLabel/LTMorphingLabel.swift; sourceTree = "<group>"; };
+		2D46F55FB86F8950FA6F4D9EECDEA7FD /* LTCharacterLimbo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTCharacterLimbo.swift; path = CountdownLabel/LTMorphingLabel/LTCharacterLimbo.swift; sourceTree = "<group>"; };
+		37FE1BF4AAEB2B06652BF319ECF47E00 /* Pods-Bistrodengi-WaitingView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bistrodengi-WaitingView.debug.xcconfig"; sourceTree = "<group>"; };
+		39AF5C5CC6F697A76355DFDA369585FB /* LTMorphingEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingEffect.swift; path = CountdownLabel/LTMorphingLabel/LTMorphingEffect.swift; sourceTree = "<group>"; };
+		3A6F931A864FE46E4BB82882C47251F0 /* CountdownLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountdownLabel-umbrella.h"; sourceTree = "<group>"; };
+		5BF33773166EFDDACD38B093F4E3F1F7 /* Pods-Bistrodengi-WaitingView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bistrodengi-WaitingView.modulemap"; sourceTree = "<group>"; };
+		63F827D2D35A09492BDF5F5D3B2BA4FA /* Pods-Bistrodengi-WaitingView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Bistrodengi-WaitingView"; path = Pods_Bistrodengi_WaitingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		683414D25E3FDD3AAEB8B60528751745 /* LTMorphingLabel+Sparkle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Sparkle.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Sparkle.swift"; sourceTree = "<group>"; };
+		714D4386342B1AABCADB2F448E08A6D3 /* LTMorphingLabel+Anvil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Anvil.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Anvil.swift"; sourceTree = "<group>"; };
+		72364D9638FCDE10F237E188E1BEDF3D /* CountdownLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CountdownLabel.modulemap; sourceTree = "<group>"; };
+		769AC711D0F4743DD59A1AAC2B0B5904 /* LTCharacterDiffResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTCharacterDiffResult.swift; path = CountdownLabel/LTMorphingLabel/LTCharacterDiffResult.swift; sourceTree = "<group>"; };
+		7FF885DD5D553DBB40C7A2250A7A86B9 /* LTMorphingLabel+Burn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Burn.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Burn.swift"; sourceTree = "<group>"; };
+		8673BAE53BA24AF7E837730C996B5362 /* LTMorphingLabel+Pixelate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Pixelate.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Pixelate.swift"; sourceTree = "<group>"; };
+		8936E68BA75F644363CE427ECC2EAFB1 /* Pods-Bistrodengi-WaitingView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bistrodengi-WaitingView-acknowledgements.plist"; sourceTree = "<group>"; };
+		8BF8AD8B2E0E893F36109389A2436D99 /* Pods-Bistrodengi-WaitingView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bistrodengi-WaitingView-umbrella.h"; sourceTree = "<group>"; };
+		8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CountdownLabel; path = CountdownLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB0834A5FCB9F6709F755BE2DA4C1E4 /* LTEmitterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTEmitterView.swift; path = CountdownLabel/LTMorphingLabel/LTEmitterView.swift; sourceTree = "<group>"; };
+		99DA434C24A1699C617A1C480A314052 /* LTMorphingLabel+Fall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Fall.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Fall.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8E9A9B8F7206B0ED468462121B7DF39 /* CountdownLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CountdownLabel.debug.xcconfig; sourceTree = "<group>"; };
+		ADE7005BFAE8879FF8666E81C7A332E7 /* Pods-Bistrodengi-WaitingView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bistrodengi-WaitingView-frameworks.sh"; sourceTree = "<group>"; };
+		AEC8ADF09067ADA574CE40996153A3EC /* LTMorphingLabel+Evaporate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Evaporate.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Evaporate.swift"; sourceTree = "<group>"; };
+		BB934A82B499BEECEC7288E3AA13015C /* Pods-Bistrodengi-WaitingView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bistrodengi-WaitingView-dummy.m"; sourceTree = "<group>"; };
+		C28D8795F52FC59BCB8AC824F0326506 /* CountdownLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountdownLabel-prefix.pch"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DF4479F81EA2DFEA3675DA61EA587F36 /* Pods-Bistrodengi-WaitingView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bistrodengi-WaitingView.release.xcconfig"; sourceTree = "<group>"; };
+		E66A731EED5B70891077833275C415BD /* CountdownLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CountdownLabel-dummy.m"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AC4A17305F5CEBD8BC3D440708E05AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70156C2102D445B91CB0711BD031308C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D270BA5F4BB8496DF45EA792E956A309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408588ECEC8C80735B8FCE421258C071 /* Foundation.framework in Frameworks */,
+				0DFCCB0B49D8915F4FA82041D52AD397 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4921CEE56AE8FBA97B74C4BBEB6A8706 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72364D9638FCDE10F237E188E1BEDF3D /* CountdownLabel.modulemap */,
+				E66A731EED5B70891077833275C415BD /* CountdownLabel-dummy.m */,
+				12CB81B50614B5DA40108ABDDB0F47E8 /* CountdownLabel-Info.plist */,
+				C28D8795F52FC59BCB8AC824F0326506 /* CountdownLabel-prefix.pch */,
+				3A6F931A864FE46E4BB82882C47251F0 /* CountdownLabel-umbrella.h */,
+				A8E9A9B8F7206B0ED468462121B7DF39 /* CountdownLabel.debug.xcconfig */,
+				08CF41D624D5BFB973CE379173826A75 /* CountdownLabel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CountdownLabel";
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		73582741D5BB610CFDD8E66A82EF8BAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2719555A69794AA380AE4E667919738 /* CountdownLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA4F9318887EA83191EB4587B706C91E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB7D8598D33BD0402C35725582E22D09 /* Pods-Bistrodengi-WaitingView */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B65EDFEA529ABB0B107FD1A03FF8EE14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel */,
+				63F827D2D35A09492BDF5F5D3B2BA4FA /* Pods-Bistrodengi-WaitingView */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				73582741D5BB610CFDD8E66A82EF8BAB /* Pods */,
+				B65EDFEA529ABB0B107FD1A03FF8EE14 /* Products */,
+				AA4F9318887EA83191EB4587B706C91E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2719555A69794AA380AE4E667919738 /* CountdownLabel */ = {
+			isa = PBXGroup;
+			children = (
+				1CCAC15C1E0FCB6014FCA2DC92B30F9A /* CountdownLabel.swift */,
+				769AC711D0F4743DD59A1AAC2B0B5904 /* LTCharacterDiffResult.swift */,
+				2D46F55FB86F8950FA6F4D9EECDEA7FD /* LTCharacterLimbo.swift */,
+				26CE2BF2D75D79D76C405A678E181E10 /* LTEasing.swift */,
+				8EB0834A5FCB9F6709F755BE2DA4C1E4 /* LTEmitterView.swift */,
+				39AF5C5CC6F697A76355DFDA369585FB /* LTMorphingEffect.swift */,
+				27E9FE9E17AFF9A742C8522C840E1343 /* LTMorphingLabel.swift */,
+				714D4386342B1AABCADB2F448E08A6D3 /* LTMorphingLabel+Anvil.swift */,
+				7FF885DD5D553DBB40C7A2250A7A86B9 /* LTMorphingLabel+Burn.swift */,
+				AEC8ADF09067ADA574CE40996153A3EC /* LTMorphingLabel+Evaporate.swift */,
+				99DA434C24A1699C617A1C480A314052 /* LTMorphingLabel+Fall.swift */,
+				8673BAE53BA24AF7E837730C996B5362 /* LTMorphingLabel+Pixelate.swift */,
+				683414D25E3FDD3AAEB8B60528751745 /* LTMorphingLabel+Sparkle.swift */,
+				21BCCDBE9F40733AA0FA2F921617231B /* LTStringDiffResult.swift */,
+				4921CEE56AE8FBA97B74C4BBEB6A8706 /* Support Files */,
+			);
+			name = CountdownLabel;
+			path = CountdownLabel;
+			sourceTree = "<group>";
+		};
+		EB7D8598D33BD0402C35725582E22D09 /* Pods-Bistrodengi-WaitingView */ = {
+			isa = PBXGroup;
+			children = (
+				5BF33773166EFDDACD38B093F4E3F1F7 /* Pods-Bistrodengi-WaitingView.modulemap */,
+				09A0F696C4F4F468D32A912899465A5D /* Pods-Bistrodengi-WaitingView-acknowledgements.markdown */,
+				8936E68BA75F644363CE427ECC2EAFB1 /* Pods-Bistrodengi-WaitingView-acknowledgements.plist */,
+				BB934A82B499BEECEC7288E3AA13015C /* Pods-Bistrodengi-WaitingView-dummy.m */,
+				ADE7005BFAE8879FF8666E81C7A332E7 /* Pods-Bistrodengi-WaitingView-frameworks.sh */,
+				2788EDDAAB88B3AC5736C3BA9CF007BF /* Pods-Bistrodengi-WaitingView-Info.plist */,
+				8BF8AD8B2E0E893F36109389A2436D99 /* Pods-Bistrodengi-WaitingView-umbrella.h */,
+				37FE1BF4AAEB2B06652BF319ECF47E00 /* Pods-Bistrodengi-WaitingView.debug.xcconfig */,
+				DF4479F81EA2DFEA3675DA61EA587F36 /* Pods-Bistrodengi-WaitingView.release.xcconfig */,
+			);
+			name = "Pods-Bistrodengi-WaitingView";
+			path = "Target Support Files/Pods-Bistrodengi-WaitingView";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2C8DF772B48E89E242951E103D782555 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664296427A01653CCB20CD69B14EDFDB /* Pods-Bistrodengi-WaitingView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F18E338F02F1D3CE6461DF89131FEB7F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A921FA9C2269ACB1CA9CF81DB82E71AC /* CountdownLabel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0DD526091D33E33B86AFCF37F8478384 /* CountdownLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 281D17DF30002CD6996A7C82EFFB81D6 /* Build configuration list for PBXNativeTarget "CountdownLabel" */;
+			buildPhases = (
+				F18E338F02F1D3CE6461DF89131FEB7F /* Headers */,
+				5BC7A3B73FF64FB05E3D8D18DB6B98BB /* Sources */,
+				D270BA5F4BB8496DF45EA792E956A309 /* Frameworks */,
+				F274CB5D2553D536F02E669FCE3BD245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CountdownLabel;
+			productName = CountdownLabel;
+			productReference = 8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9128573D53E11545EF9ADC6F31DC0EF /* Pods-Bistrodengi-WaitingView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0840F975A83C4E968476F4E81F9A194B /* Build configuration list for PBXNativeTarget "Pods-Bistrodengi-WaitingView" */;
+			buildPhases = (
+				2C8DF772B48E89E242951E103D782555 /* Headers */,
+				F7223143EA598C93E0BD7154C9AE36C1 /* Sources */,
+				5AC4A17305F5CEBD8BC3D440708E05AC /* Frameworks */,
+				8D4BD1D9653D549A7C421AD54A140965 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98CD7BCAFA96F55CC432D6D1ECA437F /* PBXTargetDependency */,
+			);
+			name = "Pods-Bistrodengi-WaitingView";
+			productName = Pods_Bistrodengi_WaitingView;
+			productReference = 63F827D2D35A09492BDF5F5D3B2BA4FA /* Pods-Bistrodengi-WaitingView */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B65EDFEA529ABB0B107FD1A03FF8EE14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DD526091D33E33B86AFCF37F8478384 /* CountdownLabel */,
+				C9128573D53E11545EF9ADC6F31DC0EF /* Pods-Bistrodengi-WaitingView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D4BD1D9653D549A7C421AD54A140965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F274CB5D2553D536F02E669FCE3BD245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BC7A3B73FF64FB05E3D8D18DB6B98BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67DA85676B4243BEF9311EA0920150B5 /* CountdownLabel.swift in Sources */,
+				02E716E85317AFD6EF436A75FF463F26 /* CountdownLabel-dummy.m in Sources */,
+				C93EB3B1BA2B88C5AE7346F90E95ED85 /* LTCharacterDiffResult.swift in Sources */,
+				22C19D7574BD2995C688F1E1C92EEF00 /* LTCharacterLimbo.swift in Sources */,
+				CA412212CBD40BB65586FB292863AA55 /* LTEasing.swift in Sources */,
+				AD23A72E632F2CC9135154B4D49E93B6 /* LTEmitterView.swift in Sources */,
+				8804263766950B8625CC9D40F3B9F963 /* LTMorphingEffect.swift in Sources */,
+				9A208774406A4DA22204E3146AF01524 /* LTMorphingLabel.swift in Sources */,
+				7187E7BE95B7F5509970B68CF5C9A3CF /* LTMorphingLabel+Anvil.swift in Sources */,
+				EE6C16C3A985298398508A8EEE20AAC1 /* LTMorphingLabel+Burn.swift in Sources */,
+				24EB0B60E277BABF071537B99C192FC9 /* LTMorphingLabel+Evaporate.swift in Sources */,
+				5130E7A0408A6CDF8DE7B58C0A33B8EF /* LTMorphingLabel+Fall.swift in Sources */,
+				17C07CAAFA857E76ED4B78AD2294E3C2 /* LTMorphingLabel+Pixelate.swift in Sources */,
+				A97979D2BB10806FD9FCF57953D5206B /* LTMorphingLabel+Sparkle.swift in Sources */,
+				34DC8C2277660E4DD5C6575C0F389E48 /* LTStringDiffResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7223143EA598C93E0BD7154C9AE36C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8039A4F9581AF07ABB73ADE1B4C492 /* Pods-Bistrodengi-WaitingView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D98CD7BCAFA96F55CC432D6D1ECA437F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CountdownLabel;
+			target = 0DD526091D33E33B86AFCF37F8478384 /* CountdownLabel */;
+			targetProxy = 4CE12CF505A97668E0F4EE1174AA05F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25B0D723788C879BF77C5B33109DD4BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8E9A9B8F7206B0ED468462121B7DF39 /* CountdownLabel.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CountdownLabel/CountdownLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CountdownLabel/CountdownLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CountdownLabel/CountdownLabel.modulemap";
+				PRODUCT_MODULE_NAME = CountdownLabel;
+				PRODUCT_NAME = CountdownLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2BD4D92F6EA3851BBFEA1F81D1213D21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF4479F81EA2DFEA3675DA61EA587F36 /* Pods-Bistrodengi-WaitingView.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bistrodengi-WaitingView/Pods-Bistrodengi-WaitingView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Bistrodengi-WaitingView/Pods-Bistrodengi-WaitingView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5E3884EEE861723FFCB07C1C652FA797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08CF41D624D5BFB973CE379173826A75 /* CountdownLabel.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CountdownLabel/CountdownLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CountdownLabel/CountdownLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CountdownLabel/CountdownLabel.modulemap";
+				PRODUCT_MODULE_NAME = CountdownLabel;
+				PRODUCT_NAME = CountdownLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BF2FBC316DA3C32919A7F354ED52E1F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37FE1BF4AAEB2B06652BF319ECF47E00 /* Pods-Bistrodengi-WaitingView.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bistrodengi-WaitingView/Pods-Bistrodengi-WaitingView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Bistrodengi-WaitingView/Pods-Bistrodengi-WaitingView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0840F975A83C4E968476F4E81F9A194B /* Build configuration list for PBXNativeTarget "Pods-Bistrodengi-WaitingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2FBC316DA3C32919A7F354ED52E1F3 /* Debug */,
+				2BD4D92F6EA3851BBFEA1F81D1213D21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		281D17DF30002CD6996A7C82EFFB81D6 /* Build configuration list for PBXNativeTarget "CountdownLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B0D723788C879BF77C5B33109DD4BD /* Debug */,
+				5E3884EEE861723FFCB07C1C652FA797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,21 @@
+PODS:
+  - CountdownLabel (5.0.0)
+
+DEPENDENCIES:
+  - CountdownLabel (from `https://github.com/linkstreet/CountdownLabel.git`)
+
+EXTERNAL SOURCES:
+  CountdownLabel:
+    :git: https://github.com/linkstreet/CountdownLabel.git
+
+CHECKOUT OPTIONS:
+  CountdownLabel:
+    :commit: 00bed98db1dbba46562224ba5b584e0065fcbf79
+    :git: https://github.com/linkstreet/CountdownLabel.git
+
+SPEC CHECKSUMS:
+  CountdownLabel: 78e666cfd5bfdb91e03803a9948702ad5522b55a
+
+PODFILE CHECKSUM: e55176da0766dc4294296992d33bb5856bb57dd9
+
+COCOAPODS: 1.12.1
