@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Mtz-bZ-8kz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Mtz-bZ-8kz">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="152" translatesAutoresizingMaskIntoConstraints="NO" id="cox-Sy-E8G">
@@ -42,14 +42,14 @@
                                             <constraint firstAttribute="width" constant="20" id="SV0-8z-Fqm"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="CallMe"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="call-me-icon"/>
                                         <connections>
                                             <action selector="callMeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cfe-tj-KIc"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Timer" translatesAutoresizingMaskIntoConstraints="NO" id="63R-RR-NGn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-timer" translatesAutoresizingMaskIntoConstraints="NO" id="63R-RR-NGn">
                                 <rect key="frame" x="122" y="252" width="149" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="149" id="I0v-72-C2g"/>
@@ -134,7 +134,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="sKy-nA-HFM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sKy-nA-HFM">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Увы, документы не прошли проверку" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCF-Ev-5e5">
@@ -142,7 +142,7 @@
                                 <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="24"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Expired" translatesAutoresizingMaskIntoConstraints="NO" id="nSr-zi-EQK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="expired-timer" translatesAutoresizingMaskIntoConstraints="NO" id="nSr-zi-EQK">
                                 <rect key="frame" x="122" y="252" width="149" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="149" id="9ga-es-aOm"/>
@@ -174,7 +174,7 @@
                                             <constraint firstAttribute="width" constant="20" id="ZQk-TA-Ad3"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="CallMe"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="call-me-icon"/>
                                         <connections>
                                             <action selector="callMeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3yx-HQ-KKp"/>
                                         </connections>
@@ -245,10 +245,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background" width="375" height="812"/>
-        <image name="CallMe" width="20" height="20"/>
-        <image name="Expired" width="149" height="149"/>
-        <image name="Timer" width="149" height="149"/>
+        <image name="background" width="375" height="812"/>
+        <image name="call-me-icon" width="20" height="20"/>
+        <image name="empty-timer" width="149" height="149"/>
+        <image name="expired-timer" width="149" height="149"/>
         <namedColor name="Gray70">
             <color red="0.43500000238418579" green="0.44299998879432678" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
