@@ -7,15 +7,23 @@
 
 import UIKit
 import Foundation
+import CountdownLabel
 
-class WaitingView: UIViewController {
+class WaitingViewController: UIViewController {
     
     //MARK: Vars
     private var loanAmount = 100000
-    private var loanDays = 2
+    private var loanDays = 1
     private var timer: Timer?
     private var remainingTime: Int = 5 * 60
     private var currentIndex: Int = 0
+    let countdownLabel = CountdownLabel()
+    
+    var config: WaitingConfig = .documents {
+        didSet {
+            updateUI()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +32,9 @@ class WaitingView: UIViewController {
         loanLabel.text = "\(loanAmount) ₽ на \(loanDays) \(dayForm)"
         
         startTimer()
-        updateUI(with: waitingModel[currentIndex])
+        updateUI()
         basicAnimation()
+        updateTimerLabel()
     }
     
     override func viewDidLayoutSubviews() {
@@ -39,17 +48,22 @@ class WaitingView: UIViewController {
     }
     
     @IBOutlet weak var timerImage: UIImageView!
-    @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var headerMessage: UILabel!
     @IBOutlet weak var mainText: UILabel!
     
     //MARK: Days Logic
-    var dayForm = ["день", "дня", "дней"]
-    func pluralForm(number: Int, forms: [String]) -> String {
-      return number % 10 == 1 && number % 100 != 11 ? forms[0] :
-        (number % 10 >= 2 && number % 10 <= 4 && (number % 100 < 10 || number % 100 >= 20) ? forms[1] : forms[2])
-    }
     
+    func pluralForm(number: Int, forms: [String]) -> String {
+        if number % 10 == 1 && number % 100 != 11 {
+            return forms[0]
+        } else {
+            if (number % 10 >= 2 && number % 10 <= 4) && (number % 100 < 10 || number % 100 >= 20) {
+                return forms[1]
+            } else {
+                return forms[2]
+            }
+        }
+    }
     
     //MARK: Timer Logic
     func timeFormatted(_ totalSeconds: Int) -> String {
@@ -58,17 +72,17 @@ class WaitingView: UIViewController {
         return String(format: "%02d:%02d", minutes, seconds)
     }
     
-    func updateUI(with components: WaitingComponents) {
+    func updateUI() {
         UIView.transition(with: timerImage, duration: 0.5, options: .transitionCrossDissolve, animations: {
-            self.timerImage.image = UIImage(named: components.image)
+            self.timerImage.image = self.config.image
         }, completion: nil)
         
         UIView.transition(with: headerMessage, duration: 0.2, options: .transitionCrossDissolve, animations: {
-            self.headerMessage.text = components.headerMessage
+            self.headerMessage.text = self.config.headerMessage
         }, completion: nil)
         
         UIView.transition(with: mainText, duration: 0.5, options: .transitionCrossDissolve, animations: {
-            self.mainText.text = components.mainText
+            self.mainText.text = self.config.mainText
         }, completion: nil)
     }
     
@@ -76,19 +90,24 @@ class WaitingView: UIViewController {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] timer in
             guard let self = self else { return }
             self.remainingTime -= 1
-            self.timerLabel.text = self.timeFormatted(self.remainingTime)
+            self.countdownLabel.text = self.timeFormatted(self.remainingTime)
             
             if self.remainingTime <= 0 {
                 self.currentIndex = 1
-                self.updateUI(with: waitingModel[self.currentIndex])
+                self.config = .notEnoughTime
                 self.timer?.invalidate()
-                self.timerLabel.isHidden = true
+                self.countdownLabel.isHidden = true
             }
         }
     }
     
+    func invalidateTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
     //MARK: Timer animation
-   
+    
     let shapeLayer = CAShapeLayer()
     
     func animationCircular(){
@@ -96,7 +115,7 @@ class WaitingView: UIViewController {
         let endAngle = (-CGFloat.pi / 2)
         let startAngle = 2 * CGFloat.pi + endAngle
         let center = CGPoint(x: view.center.x - 11, y: 338)
-       
+        
         let circularPath = UIBezierPath(arcCenter: center, radius: 61, startAngle: startAngle, endAngle: endAngle, clockwise: false)
         
         shapeLayer.path = circularPath.cgPath
@@ -115,6 +134,26 @@ class WaitingView: UIViewController {
         basicAnimation.fillMode = CAMediaTimingFillMode.forwards
         basicAnimation.isRemovedOnCompletion = false
         shapeLayer.add(basicAnimation, forKey: "basicAnimation")
+    }
+    
+    //MARK: Animated Digits
+    func updateTimerLabel() {
+        view.addSubview(countdownLabel)
+
+        countdownLabel.translatesAutoresizingMaskIntoConstraints = false
+        countdownLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -11).isActive = true
+        countdownLabel.centerYAnchor.constraint(equalTo: view.topAnchor, constant: 340).isActive = true
+        
+        countdownLabel.font = UIFont(name: "Rubik-Bold", size: 32)
+        countdownLabel.textColor = .white
+        countdownLabel.timeFormat = "mm:ss"
+        
+        countdownLabel.animationType = .Evaporate
+        countdownLabel.start()
+    }
+    
+    deinit {
+        invalidateTimer()
     }
 }
 

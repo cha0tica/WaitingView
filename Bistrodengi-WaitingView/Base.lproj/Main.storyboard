@@ -2,21 +2,23 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Waiting View-->
+        <!--Waiting View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WaitingView" customModule="Bistrodengi_WaitingView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WaitingViewController" customModule="Bistrodengi_WaitingView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Mtz-bZ-8kz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Mtz-bZ-8kz">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="152" translatesAutoresizingMaskIntoConstraints="NO" id="cox-Sy-E8G">
@@ -41,36 +43,24 @@
                                             <constraint firstAttribute="height" constant="20" id="QSp-77-7oM"/>
                                             <constraint firstAttribute="width" constant="20" id="SV0-8z-Fqm"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="CallMe"/>
+                                        <color key="tintColor" name="Gray70"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="call-me-icon">
+                                            <color key="titleColor" name="Gray70"/>
+                                        </state>
                                         <connections>
                                             <action selector="callMeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cfe-tj-KIc"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Timer" translatesAutoresizingMaskIntoConstraints="NO" id="63R-RR-NGn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-timer" translatesAutoresizingMaskIntoConstraints="NO" id="63R-RR-NGn">
                                 <rect key="frame" x="122" y="252" width="149" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="149" id="I0v-72-C2g"/>
                                     <constraint firstAttribute="height" constant="149" id="nEZ-kY-NrI"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAW-TP-Vs9">
-                                <rect key="frame" x="137" y="324" width="82.666666666666686" height="29"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="04:59">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="33" name="Rubik-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" systemColor="linkColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваши документы сейчас на проверке" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmK-pJ-aR1">
                                 <rect key="frame" x="46" y="445" width="301" height="56"/>
                                 <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="24"/>
@@ -105,9 +95,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EmK-pJ-aR1" secondAttribute="trailing" constant="46" id="ZaK-Gw-AxN"/>
                             <constraint firstItem="wtr-6t-Paq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="bbx-5r-0t7"/>
                             <constraint firstItem="Mtz-bZ-8kz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="djk-Ds-Ggd"/>
-                            <constraint firstItem="oAW-TP-Vs9" firstAttribute="leading" secondItem="63R-RR-NGn" secondAttribute="leading" constant="15" id="fkL-NM-B9v"/>
-                            <constraint firstItem="oAW-TP-Vs9" firstAttribute="top" secondItem="63R-RR-NGn" secondAttribute="top" constant="72" id="gIN-7C-Sz5"/>
-                            <constraint firstItem="63R-RR-NGn" firstAttribute="bottom" secondItem="oAW-TP-Vs9" secondAttribute="bottom" constant="48" id="hyQ-ss-zVi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cox-Sy-E8G" secondAttribute="trailing" constant="20" id="i1I-OT-3hy"/>
                             <constraint firstItem="EmK-pJ-aR1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="kAo-Zg-zSv"/>
                             <constraint firstItem="wtr-6t-Paq" firstAttribute="top" secondItem="EmK-pJ-aR1" secondAttribute="bottom" constant="20" id="oQd-fb-g7e"/>
@@ -119,7 +106,6 @@
                         <outlet property="loanLabel" destination="heF-Bj-m2F" id="O0a-R7-zIL"/>
                         <outlet property="mainText" destination="wtr-6t-Paq" id="tir-Vm-Sqg"/>
                         <outlet property="timerImage" destination="63R-RR-NGn" id="3AY-Ec-P6T"/>
-                        <outlet property="timerLabel" destination="oAW-TP-Vs9" id="CO5-o1-oyb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -134,7 +120,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="sKy-nA-HFM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sKy-nA-HFM">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Увы, документы не прошли проверку" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCF-Ev-5e5">
@@ -142,7 +128,7 @@
                                 <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="24"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Expired" translatesAutoresizingMaskIntoConstraints="NO" id="nSr-zi-EQK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="expired-timer" translatesAutoresizingMaskIntoConstraints="NO" id="nSr-zi-EQK">
                                 <rect key="frame" x="122" y="252" width="149" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="149" id="9ga-es-aOm"/>
@@ -167,14 +153,16 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDp-qJ-c0q">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDp-qJ-c0q">
                                         <rect key="frame" x="333" y="0.0" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="6G1-MV-V9r"/>
                                             <constraint firstAttribute="width" constant="20" id="ZQk-TA-Ad3"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="CallMe"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="call-me-icon">
+                                            <color key="titleColor" name="Gray70"/>
+                                        </state>
                                         <connections>
                                             <action selector="callMeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3yx-HQ-KKp"/>
                                         </connections>
@@ -245,16 +233,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background" width="375" height="812"/>
-        <image name="CallMe" width="20" height="20"/>
-        <image name="Expired" width="149" height="149"/>
-        <image name="Timer" width="149" height="149"/>
+        <image name="background" width="375" height="812"/>
+        <image name="call-me-icon" width="20" height="20"/>
+        <image name="empty-timer" width="149" height="149"/>
+        <image name="expired-timer" width="149" height="149"/>
         <namedColor name="Gray70">
             <color red="0.43500000238418579" green="0.44299998879432678" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
