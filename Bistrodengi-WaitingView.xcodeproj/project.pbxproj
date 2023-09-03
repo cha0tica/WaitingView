@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		BE1465CB42DC42FDF93A25EF /* Pods_Bistrodengi_WaitingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063135661518704AA1AD936B /* Pods_Bistrodengi_WaitingView.framework */; };
 		D112AD602A9BE337008A5BFB /* WaitingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AD5F2A9BE337008A5BFB /* WaitingViewModel.swift */; };
-		D112AD632A9BF9F5008A5BFB /* RefusalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AD622A9BF9F5008A5BFB /* RefusalView.swift */; };
+		D112AD632A9BF9F5008A5BFB /* RefusalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AD622A9BF9F5008A5BFB /* RefusalViewController.swift */; };
+		D12604C92AA51A7700739EB6 /* TopText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12604C82AA51A7700739EB6 /* TopText.swift */; };
+		D12604CB2AA51B5A00739EB6 /* TimerAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12604CA2AA51B5A00739EB6 /* TimerAnimations.swift */; };
+		D1359D382AA2014D00BC80BF /* AddCardButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1359D372AA2014D00BC80BF /* AddCardButtonCell.swift */; };
 		D13A6DD72A9BC43D009131AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A6DD62A9BC43D009131AD /* AppDelegate.swift */; };
 		D13A6DD92A9BC43D009131AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A6DD82A9BC43D009131AD /* SceneDelegate.swift */; };
 		D13A6DDB2A9BC43D009131AD /* WaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A6DDA2A9BC43D009131AD /* WaitingViewController.swift */; };
@@ -30,14 +33,21 @@
 		D13A6E042A9BC51E009131AD /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D13A6DF62A9BC51E009131AD /* Rubik-BlackItalic.ttf */; };
 		D13A6E052A9BC51E009131AD /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D13A6DF72A9BC51E009131AD /* Rubik-BoldItalic.ttf */; };
 		D13A6E062A9BC51E009131AD /* Rubik-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D13A6DF82A9BC51E009131AD /* Rubik-SemiBoldItalic.ttf */; };
+		D17405062AA50B0200D222F9 /* DottedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17405052AA50B0200D222F9 /* DottedBorderButton.swift */; };
 		D1A7686D2A9D212000041D26 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A7686C2A9D212000041D26 /* Colors.swift */; };
+		D1CC4C592AA0A8510030652D /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC4C582AA0A8510030652D /* CardModel.swift */; };
+		D1CC4C5B2AA0CF6B0030652D /* MyCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC4C5A2AA0CF6B0030652D /* MyCardsViewController.swift */; };
+		D1CC4C5D2AA117FA0030652D /* SingleCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC4C5C2AA117FA0030652D /* SingleCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		063135661518704AA1AD936B /* Pods_Bistrodengi_WaitingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bistrodengi_WaitingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB541D6DBCE5C4AAE357D6F /* Pods-Bistrodengi-WaitingView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bistrodengi-WaitingView.release.xcconfig"; path = "Target Support Files/Pods-Bistrodengi-WaitingView/Pods-Bistrodengi-WaitingView.release.xcconfig"; sourceTree = "<group>"; };
 		D112AD5F2A9BE337008A5BFB /* WaitingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingViewModel.swift; sourceTree = "<group>"; };
-		D112AD622A9BF9F5008A5BFB /* RefusalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefusalView.swift; sourceTree = "<group>"; };
+		D112AD622A9BF9F5008A5BFB /* RefusalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefusalViewController.swift; sourceTree = "<group>"; };
+		D12604C82AA51A7700739EB6 /* TopText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopText.swift; sourceTree = "<group>"; };
+		D12604CA2AA51B5A00739EB6 /* TimerAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAnimations.swift; sourceTree = "<group>"; };
+		D1359D372AA2014D00BC80BF /* AddCardButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardButtonCell.swift; sourceTree = "<group>"; };
 		D13A6DD32A9BC43D009131AD /* Bistrodengi-WaitingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bistrodengi-WaitingView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13A6DD62A9BC43D009131AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D13A6DD82A9BC43D009131AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +70,11 @@
 		D13A6DF62A9BC51E009131AD /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
 		D13A6DF72A9BC51E009131AD /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
 		D13A6DF82A9BC51E009131AD /* Rubik-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		D17405052AA50B0200D222F9 /* DottedBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DottedBorderButton.swift; sourceTree = "<group>"; };
 		D1A7686C2A9D212000041D26 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D1CC4C582AA0A8510030652D /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		D1CC4C5A2AA0CF6B0030652D /* MyCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardsViewController.swift; sourceTree = "<group>"; };
+		D1CC4C5C2AA117FA0030652D /* SingleCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCardViewController.swift; sourceTree = "<group>"; };
 		FABD4FE4F66E8BCB88566256 /* Pods-Bistrodengi-WaitingView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bistrodengi-WaitingView.debug.xcconfig"; path = "Target Support Files/Pods-Bistrodengi-WaitingView/Pods-Bistrodengi-WaitingView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,21 +116,59 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		D112AD642A9BFA2C008A5BFB /* Views */ = {
+		D112AD642A9BFA2C008A5BFB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D13A6DDA2A9BC43D009131AD /* WaitingViewController.swift */,
-				D112AD622A9BF9F5008A5BFB /* RefusalView.swift */,
+				D1359D362AA200E300BC80BF /* OtherViews */,
+				D1359D342AA200A400BC80BF /* Timers */,
+				D1359D352AA200BB00BC80BF /* AddingCards */,
 			);
-			path = Views;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		D112AD652A9BFA36008A5BFB /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				D112AD5F2A9BE337008A5BFB /* WaitingViewModel.swift */,
+				D1CC4C582AA0A8510030652D /* CardModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D12604C72AA519DB00739EB6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D17405052AA50B0200D222F9 /* DottedBorderButton.swift */,
+				D12604C82AA51A7700739EB6 /* TopText.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D1359D342AA200A400BC80BF /* Timers */ = {
+			isa = PBXGroup;
+			children = (
+				D13A6DDA2A9BC43D009131AD /* WaitingViewController.swift */,
+				D12604CA2AA51B5A00739EB6 /* TimerAnimations.swift */,
+			);
+			path = Timers;
+			sourceTree = "<group>";
+		};
+		D1359D352AA200BB00BC80BF /* AddingCards */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC4C5A2AA0CF6B0030652D /* MyCardsViewController.swift */,
+				D1CC4C5C2AA117FA0030652D /* SingleCardViewController.swift */,
+				D1359D372AA2014D00BC80BF /* AddCardButtonCell.swift */,
+			);
+			path = AddingCards;
+			sourceTree = "<group>";
+		};
+		D1359D362AA200E300BC80BF /* OtherViews */ = {
+			isa = PBXGroup;
+			children = (
+				D112AD622A9BF9F5008A5BFB /* RefusalViewController.swift */,
+			);
+			path = OtherViews;
 			sourceTree = "<group>";
 		};
 		D13A6DCA2A9BC43D009131AD = {
@@ -140,11 +192,12 @@
 		D13A6DD52A9BC43D009131AD /* Bistrodengi-WaitingView */ = {
 			isa = PBXGroup;
 			children = (
-				D1A7686E2A9D212700041D26 /* Helpers */,
+				D12604C72AA519DB00739EB6 /* Components */,
 				D112AD612A9BE7E6008A5BFB /* Application */,
-				D112AD642A9BFA2C008A5BFB /* Views */,
+				D112AD642A9BFA2C008A5BFB /* ViewControllers */,
 				D112AD652A9BFA36008A5BFB /* Models */,
 				D13A6DEA2A9BC50E009131AD /* Fonts */,
+				D1A7686E2A9D212700041D26 /* Helpers */,
 				D13A6DDC2A9BC43D009131AD /* Main.storyboard */,
 				D13A6DDF2A9BC43E009131AD /* Assets.xcassets */,
 				D13A6DE12A9BC43E009131AD /* LaunchScreen.storyboard */,
@@ -311,11 +364,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1CC4C5B2AA0CF6B0030652D /* MyCardsViewController.swift in Sources */,
 				D112AD602A9BE337008A5BFB /* WaitingViewModel.swift in Sources */,
 				D1A7686D2A9D212000041D26 /* Colors.swift in Sources */,
+				D1359D382AA2014D00BC80BF /* AddCardButtonCell.swift in Sources */,
+				D12604C92AA51A7700739EB6 /* TopText.swift in Sources */,
 				D13A6DDB2A9BC43D009131AD /* WaitingViewController.swift in Sources */,
+				D1CC4C592AA0A8510030652D /* CardModel.swift in Sources */,
+				D17405062AA50B0200D222F9 /* DottedBorderButton.swift in Sources */,
 				D13A6DD72A9BC43D009131AD /* AppDelegate.swift in Sources */,
-				D112AD632A9BF9F5008A5BFB /* RefusalView.swift in Sources */,
+				D1CC4C5D2AA117FA0030652D /* SingleCardViewController.swift in Sources */,
+				D12604CB2AA51B5A00739EB6 /* TimerAnimations.swift in Sources */,
+				D112AD632A9BF9F5008A5BFB /* RefusalViewController.swift in Sources */,
 				D13A6DD92A9BC43D009131AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
