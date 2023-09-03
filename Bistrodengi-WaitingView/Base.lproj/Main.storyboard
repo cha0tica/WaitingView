@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D0z-Ux-6rQ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,6 +10,508 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="F8l-7T-9Eo">
+            <objects>
+                <viewController id="uON-P5-OAB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6fk-qi-OSZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Cbv-Gk-IJl">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="152" translatesAutoresizingMaskIntoConstraints="NO" id="i0Y-7f-Wwg">
+                                <rect key="frame" x="20" y="74" width="353" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Wfn-SF-ZYZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Сумма займа">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.4352940917" green="0.44313728810000003" blue="0.55686277149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Rubik-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3L-fv-q24">
+                                        <rect key="frame" x="333" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="nLA-FT-cW2"/>
+                                            <constraint firstAttribute="width" constant="20" id="pVo-2P-0sZ"/>
+                                        </constraints>
+                                        <color key="tintColor" name="Gray70"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="call-me-icon">
+                                            <color key="titleColor" name="Gray70"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="callMeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XKf-nw-i9z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKO-Tu-reo">
+                                <rect key="frame" x="20" y="126.99999999999999" width="353" height="30.333333333333329"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Куда отправить займ">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Rubik-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzR-aT-9Eb">
+                                <rect key="frame" x="20" y="165.33333333333334" width="353" height="72"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Добавьте вашу банковскую карту для получения займа. Мы проверим вашу карту и заморозим 1Р на 3 минуты.">
+                                        <attributes>
+                                            <color key="NSColor" name="Gray70"/>
+                                            <font key="NSFont" size="16" name="Rubik-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVf-Rj-lKN">
+                                <rect key="frame" x="20" y="269.33333333333331" width="353" height="50"/>
+                                <color key="backgroundColor" name="Green"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZSz-hA-JYY"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ДОБАВИТЬ КАРТУ">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="Rubik-SemiBold"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BoG-Iv-QCz" kind="presentation" id="zst-jR-YVz"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zWw-JE-OtD">
+                                <rect key="frame" x="20" y="325.33333333333331" width="171.66666666666666" height="30.666666666666686"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shield-icon" translatesAutoresizingMaskIntoConstraints="NO" id="rPN-lZ-75l">
+                                        <rect key="frame" x="0.0" y="8.3333333333333712" width="12" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="12" id="7g3-eN-vfM"/>
+                                            <constraint firstAttribute="height" constant="14" id="Tur-yz-Sb3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLd-zS-h15">
+                                        <rect key="frame" x="20" y="6" width="151.66666666666666" height="18.666666666666668"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Безопасный платеж">
+                                                <attributes>
+                                                    <color key="NSColor" name="Gray70"/>
+                                                    <font key="NSFont" size="16" name="Rubik-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="-2"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tLd-zS-h15" firstAttribute="top" secondItem="zWw-JE-OtD" secondAttribute="top" constant="6" id="bWX-j5-Ifw"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="acU-ce-LZK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="acU-ce-LZK" firstAttribute="trailing" secondItem="YzR-aT-9Eb" secondAttribute="trailing" constant="20" id="0fZ-Ul-R69"/>
+                            <constraint firstItem="Cbv-Gk-IJl" firstAttribute="top" secondItem="6fk-qi-OSZ" secondAttribute="top" id="2Ff-Ya-On1"/>
+                            <constraint firstItem="zWw-JE-OtD" firstAttribute="top" secondItem="NVf-Rj-lKN" secondAttribute="bottom" constant="6" id="5Jj-G5-zSj"/>
+                            <constraint firstItem="rKO-Tu-reo" firstAttribute="leading" secondItem="acU-ce-LZK" secondAttribute="leading" constant="20" id="5ly-Ec-cMt"/>
+                            <constraint firstItem="i0Y-7f-Wwg" firstAttribute="leading" secondItem="6fk-qi-OSZ" secondAttribute="leading" constant="20" id="8Fa-n4-bqo"/>
+                            <constraint firstAttribute="bottom" secondItem="Cbv-Gk-IJl" secondAttribute="bottom" id="Bep-67-wKY"/>
+                            <constraint firstItem="rKO-Tu-reo" firstAttribute="top" secondItem="i0Y-7f-Wwg" secondAttribute="bottom" constant="32" id="Cj4-FZ-2oW"/>
+                            <constraint firstItem="i0Y-7f-Wwg" firstAttribute="top" secondItem="acU-ce-LZK" secondAttribute="top" constant="15" id="Gn8-Uy-4yv"/>
+                            <constraint firstItem="NVf-Rj-lKN" firstAttribute="top" secondItem="YzR-aT-9Eb" secondAttribute="bottom" constant="32" id="Vu3-a5-cnL"/>
+                            <constraint firstItem="acU-ce-LZK" firstAttribute="trailing" secondItem="i0Y-7f-Wwg" secondAttribute="trailing" constant="20" id="Y3D-3j-yFn"/>
+                            <constraint firstAttribute="trailing" secondItem="Cbv-Gk-IJl" secondAttribute="trailing" id="dZ5-q8-dC3"/>
+                            <constraint firstItem="NVf-Rj-lKN" firstAttribute="leading" secondItem="acU-ce-LZK" secondAttribute="leading" constant="20" id="gqA-NF-VL4"/>
+                            <constraint firstItem="YzR-aT-9Eb" firstAttribute="leading" secondItem="acU-ce-LZK" secondAttribute="leading" constant="20" id="h4P-V9-3Al"/>
+                            <constraint firstItem="YzR-aT-9Eb" firstAttribute="top" secondItem="rKO-Tu-reo" secondAttribute="bottom" constant="8" id="hFV-v0-D2n"/>
+                            <constraint firstItem="acU-ce-LZK" firstAttribute="trailing" secondItem="NVf-Rj-lKN" secondAttribute="trailing" constant="20" id="idp-s0-6FN"/>
+                            <constraint firstItem="zWw-JE-OtD" firstAttribute="leading" secondItem="acU-ce-LZK" secondAttribute="leading" constant="20" id="mds-2w-36X"/>
+                            <constraint firstItem="Cbv-Gk-IJl" firstAttribute="leading" secondItem="6fk-qi-OSZ" secondAttribute="leading" id="sHT-uD-AMA"/>
+                            <constraint firstItem="acU-ce-LZK" firstAttribute="trailing" secondItem="rKO-Tu-reo" secondAttribute="trailing" constant="20" id="vrE-qD-O48"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sAk-6T-KkY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1036" y="-774"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Gc5-Cm-ipp">
+            <objects>
+                <viewController id="BoG-Iv-QCz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SuB-Z2-FAc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payler-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z7q-xJ-vHy">
+                                <rect key="frame" x="50" y="59.999999999999993" width="293" height="74.333333333333314"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fa-eS-sQU">
+                                <rect key="frame" x="60" y="174.33333333333334" width="273" height="50"/>
+                                <color key="backgroundColor" name="Gray70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aJX-Es-Jbg"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ДАЛЕЕ">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="Rubik-SemiBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vpS-9i-Nep"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vpS-9i-Nep" firstAttribute="trailing" secondItem="Z7q-xJ-vHy" secondAttribute="trailing" constant="50" id="3M9-ZV-gNF"/>
+                            <constraint firstItem="Z7q-xJ-vHy" firstAttribute="leading" secondItem="vpS-9i-Nep" secondAttribute="leading" constant="50" id="6il-bf-Erq"/>
+                            <constraint firstItem="6fa-eS-sQU" firstAttribute="leading" secondItem="vpS-9i-Nep" secondAttribute="leading" constant="60" id="Cgx-SE-TTj"/>
+                            <constraint firstItem="Z7q-xJ-vHy" firstAttribute="centerX" secondItem="SuB-Z2-FAc" secondAttribute="centerX" id="Fwy-cE-jGY"/>
+                            <constraint firstItem="6fa-eS-sQU" firstAttribute="top" secondItem="Z7q-xJ-vHy" secondAttribute="bottom" constant="40" id="TtK-oh-VbU"/>
+                            <constraint firstItem="vpS-9i-Nep" firstAttribute="trailing" secondItem="6fa-eS-sQU" secondAttribute="trailing" constant="60" id="fI9-4T-kCp"/>
+                            <constraint firstItem="Z7q-xJ-vHy" firstAttribute="top" secondItem="vpS-9i-Nep" secondAttribute="top" constant="60" id="lBZ-i7-7JV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoC-6e-1BJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-259" y="-775"/>
+        </scene>
+        <!--My Cards View Controller-->
+        <scene sceneID="N6Y-H8-Hjw">
+            <objects>
+                <viewController id="D0z-Ux-6rQ" customClass="MyCardsViewController" customModule="Bistrodengi_WaitingView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KAG-uM-1RV" customClass="My">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Zi9-hu-7Vp">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="152" translatesAutoresizingMaskIntoConstraints="NO" id="P23-4H-lfL">
+                                <rect key="frame" x="20" y="74" width="353" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Zbu-ga-siU">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Сумма займа">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.4352940917" green="0.44313728810000003" blue="0.55686277149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Rubik-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktg-aA-fcO">
+                                        <rect key="frame" x="333" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="MdX-6G-IIC"/>
+                                            <constraint firstAttribute="height" constant="20" id="YHQ-O8-6eV"/>
+                                        </constraints>
+                                        <color key="tintColor" name="Gray70"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="call-me-icon">
+                                            <color key="titleColor" name="Gray70"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="callMeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gr1-Xy-mQr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lS1-lX-Xvb">
+                                <rect key="frame" x="20" y="127" width="353" height="30"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Куда отправить займ">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Rubik-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnt-Oz-Gen">
+                                <rect key="frame" x="20" y="165" width="353" height="37.333333333333343"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Выберите карту на которую поступят  деньги, после одобрения заявки">
+                                        <attributes>
+                                            <color key="NSColor" name="Gray70"/>
+                                            <font key="NSFont" size="16" name="Rubik-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DIX-CR-WCq">
+                                <rect key="frame" x="20" y="218" width="353" height="458"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="emptyCell" rowHeight="1" id="r0t-0Y-f44" userLabel="emptyCell" customClass="AddCardCell" customModule="Bistrodengi_WaitingView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="353" height="1"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r0t-0Y-f44" id="vWK-QX-5p5">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="1"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cardCell" id="5tB-Mx-ogU" customClass="SingleCardCell" customModule="Bistrodengi_WaitingView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="51" width="353" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5tB-Mx-ogU" id="M4Q-XW-ren">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cI8-Ks-AEH">
+                                                    <rect key="frame" x="16" y="6" width="321" height="54"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card-system-mastercard" translatesAutoresizingMaskIntoConstraints="NO" id="rj8-I3-Nbb" userLabel="card-system">
+                                                            <rect key="frame" x="20" y="5" width="44" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="44" id="Ddi-m5-kug"/>
+                                                                <constraint firstAttribute="height" constant="44" id="Pfz-9E-FUx"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBE-dX-7Do">
+                                                            <rect key="frame" x="80.000000000000014" y="17.666666666666664" width="136.33333333333337" height="18.666666666666664"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="1234 12** **** 2343">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="16" name="Rubik-Regular"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark-deselect" translatesAutoresizingMaskIntoConstraints="NO" id="uYt-BV-s6w" userLabel="checkmark">
+                                                            <rect key="frame" x="285" y="19" width="16" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="16" id="Cf0-dQ-NSr"/>
+                                                                <constraint firstAttribute="height" constant="16" id="g8S-1a-g5C"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="rj8-I3-Nbb" firstAttribute="centerY" secondItem="cI8-Ks-AEH" secondAttribute="centerY" id="Etj-Yh-2uU"/>
+                                                        <constraint firstItem="uYt-BV-s6w" firstAttribute="centerY" secondItem="cI8-Ks-AEH" secondAttribute="centerY" id="Gkq-ak-cpE"/>
+                                                        <constraint firstItem="hBE-dX-7Do" firstAttribute="leading" secondItem="rj8-I3-Nbb" secondAttribute="trailing" constant="16" id="JZE-tw-K7U"/>
+                                                        <constraint firstItem="rj8-I3-Nbb" firstAttribute="leading" secondItem="cI8-Ks-AEH" secondAttribute="leading" constant="20" id="Q8q-2d-q2k"/>
+                                                        <constraint firstItem="hBE-dX-7Do" firstAttribute="centerY" secondItem="cI8-Ks-AEH" secondAttribute="centerY" id="Z9w-HK-pYt"/>
+                                                        <constraint firstItem="uYt-BV-s6w" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hBE-dX-7Do" secondAttribute="trailing" constant="8" symbolic="YES" id="fUN-w9-Imv"/>
+                                                        <constraint firstAttribute="trailing" secondItem="uYt-BV-s6w" secondAttribute="trailing" constant="20" id="mEc-O7-0Ri"/>
+                                                        <constraint firstAttribute="height" constant="54" id="oxm-9F-g8j"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="cI8-Ks-AEH" secondAttribute="bottom" constant="6" id="LPc-8t-mTR"/>
+                                                <constraint firstItem="cI8-Ks-AEH" firstAttribute="top" secondItem="M4Q-XW-ren" secondAttribute="top" constant="6" id="NnR-Wt-P96"/>
+                                                <constraint firstAttribute="trailing" secondItem="cI8-Ks-AEH" secondAttribute="trailing" constant="16" id="RRB-Dr-bXO"/>
+                                                <constraint firstItem="cI8-Ks-AEH" firstAttribute="leading" secondItem="M4Q-XW-ren" secondAttribute="leading" constant="16" id="blh-Cd-abd"/>
+                                                <constraint firstItem="cI8-Ks-AEH" firstAttribute="centerX" secondItem="M4Q-XW-ren" secondAttribute="centerX" id="nIH-R7-9YO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="cardNumberLabel" destination="hBE-dX-7Do" id="THu-rb-bDA"/>
+                                            <outlet property="cellView" destination="cI8-Ks-AEH" id="g0h-6T-MhB"/>
+                                            <outlet property="checkMarkImage" destination="uYt-BV-s6w" id="fbH-30-wwq"/>
+                                            <outlet property="paySystemImage" destination="rj8-I3-Nbb" id="Dnw-Gz-ikv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="addCard" rowHeight="120" id="FSo-lk-Xdf" customClass="AddCardCell" customModule="Bistrodengi_WaitingView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="117" width="353" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FSo-lk-Xdf" id="wG6-5a-8KN">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="le4-K9-Ymf">
+                                                    <rect key="frame" x="141.33333333333337" y="80" width="171.66666666666663" height="30.666666666666671"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shield-icon" translatesAutoresizingMaskIntoConstraints="NO" id="adh-ko-ge0">
+                                                            <rect key="frame" x="0.0" y="8.3333333333333286" width="12" height="14"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="14" id="PzU-FT-ZVq"/>
+                                                                <constraint firstAttribute="width" constant="12" id="w5w-PU-5C5"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UT0-Dt-YSa">
+                                                            <rect key="frame" x="20" y="6" width="151.66666666666666" height="18.666666666666668"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Безопасный платеж">
+                                                                    <attributes>
+                                                                        <color key="NSColor" name="Gray70"/>
+                                                                        <font key="NSFont" size="16" name="Rubik-Regular"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                            <size key="shadowOffset" width="0.0" height="-2"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="UT0-Dt-YSa" firstAttribute="top" secondItem="le4-K9-Ymf" secondAttribute="top" constant="6" id="C8h-82-HSm"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P0c-8R-G7d" customClass="DottedBorderButton" customModule="Bistrodengi_WaitingView" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="6" width="313" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="qsf-gH-SYJ"/>
+                                                    </constraints>
+                                                    <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal">
+                                                        <attributedString key="attributedTitle">
+                                                            <fragment content="ДОБАВИТЬ КАРТУ">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="Green"/>
+                                                                    <font key="NSFont" size="16" name="Rubik-SemiBold"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="le4-K9-Ymf" secondAttribute="trailing" constant="20" id="7qh-L7-f69"/>
+                                                <constraint firstItem="P0c-8R-G7d" firstAttribute="leading" secondItem="wG6-5a-8KN" secondAttribute="leading" constant="20" id="AhW-HZ-yZV"/>
+                                                <constraint firstItem="P0c-8R-G7d" firstAttribute="top" secondItem="wG6-5a-8KN" secondAttribute="top" constant="6" id="eAl-QH-eDB"/>
+                                                <constraint firstAttribute="trailing" secondItem="P0c-8R-G7d" secondAttribute="trailing" constant="20" id="l0g-jt-d9g"/>
+                                                <constraint firstItem="le4-K9-Ymf" firstAttribute="top" secondItem="P0c-8R-G7d" secondAttribute="bottom" constant="24" id="uhP-4W-l66"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="addCardButton" destination="P0c-8R-G7d" id="ZhE-yi-c3n"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PSa-88-Gj0">
+                                <rect key="frame" x="70.666666666666686" y="726" width="252" height="68"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="WUg-W8-Mfj"/>
+                                    <constraint firstAttribute="width" constant="252" id="ZRG-bd-Oxq"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ОТПРАВИТЬ ДАННЫЕ">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="14" name="Rubik-SemiBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5bt-5h-Mha"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="P23-4H-lfL" secondAttribute="trailing" constant="20" id="Anf-mX-B3C"/>
+                            <constraint firstItem="DIX-CR-WCq" firstAttribute="top" secondItem="Xnt-Oz-Gen" secondAttribute="bottom" constant="15.666666666666657" id="CGr-Gu-3Pl"/>
+                            <constraint firstItem="P23-4H-lfL" firstAttribute="leading" secondItem="5bt-5h-Mha" secondAttribute="leading" constant="20" id="Jmq-Zi-YZy"/>
+                            <constraint firstItem="PSa-88-Gj0" firstAttribute="centerX" secondItem="KAG-uM-1RV" secondAttribute="centerX" id="M82-TG-3yo"/>
+                            <constraint firstItem="Xnt-Oz-Gen" firstAttribute="leading" secondItem="5bt-5h-Mha" secondAttribute="leading" constant="20" id="MNS-dj-N3X"/>
+                            <constraint firstItem="5bt-5h-Mha" firstAttribute="trailing" secondItem="lS1-lX-Xvb" secondAttribute="trailing" constant="20" id="Q9A-Vg-MD0"/>
+                            <constraint firstItem="Zi9-hu-7Vp" firstAttribute="top" secondItem="KAG-uM-1RV" secondAttribute="top" id="QED-fc-E1N"/>
+                            <constraint firstAttribute="trailing" secondItem="Zi9-hu-7Vp" secondAttribute="trailing" id="TGx-iq-zpA"/>
+                            <constraint firstItem="lS1-lX-Xvb" firstAttribute="leading" secondItem="5bt-5h-Mha" secondAttribute="leading" constant="20" id="WiF-Et-4G6"/>
+                            <constraint firstItem="PSa-88-Gj0" firstAttribute="centerX" secondItem="KAG-uM-1RV" secondAttribute="centerX" id="Ws2-3e-6hL"/>
+                            <constraint firstAttribute="bottom" secondItem="PSa-88-Gj0" secondAttribute="bottom" constant="58" id="Xit-r9-V0R"/>
+                            <constraint firstItem="Xnt-Oz-Gen" firstAttribute="top" secondItem="P23-4H-lfL" secondAttribute="bottom" constant="70" id="Zr4-OP-GYu"/>
+                            <constraint firstItem="Zi9-hu-7Vp" firstAttribute="leading" secondItem="5bt-5h-Mha" secondAttribute="leading" id="aEv-1m-t14"/>
+                            <constraint firstAttribute="bottom" secondItem="Zi9-hu-7Vp" secondAttribute="bottom" id="bDF-4h-dxe"/>
+                            <constraint firstItem="Xnt-Oz-Gen" firstAttribute="top" secondItem="lS1-lX-Xvb" secondAttribute="bottom" constant="8" id="dFy-nk-3B1"/>
+                            <constraint firstItem="PSa-88-Gj0" firstAttribute="top" secondItem="DIX-CR-WCq" secondAttribute="bottom" constant="50" id="hZ2-hL-wgE"/>
+                            <constraint firstItem="lS1-lX-Xvb" firstAttribute="top" secondItem="P23-4H-lfL" secondAttribute="bottom" constant="32" id="j6M-Ph-3dE"/>
+                            <constraint firstItem="P23-4H-lfL" firstAttribute="top" secondItem="5bt-5h-Mha" secondAttribute="top" constant="15" id="pOJ-R4-79N"/>
+                            <constraint firstItem="DIX-CR-WCq" firstAttribute="leading" secondItem="Xnt-Oz-Gen" secondAttribute="leading" id="xPz-4i-45g"/>
+                            <constraint firstItem="5bt-5h-Mha" firstAttribute="trailing" secondItem="Xnt-Oz-Gen" secondAttribute="trailing" constant="20" id="z40-gq-19K"/>
+                            <constraint firstItem="DIX-CR-WCq" firstAttribute="trailing" secondItem="Xnt-Oz-Gen" secondAttribute="trailing" id="zbq-bG-qAa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardTable" destination="DIX-CR-WCq" id="P1h-t8-52x"/>
+                        <outlet property="loanLabel" destination="Zbu-ga-siU" id="eBs-I8-wOf"/>
+                        <outlet property="sendData" destination="PSa-88-Gj0" id="ToG-8s-Z2V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGU-DN-IZy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530.53435114503816" y="-775.35211267605632"/>
+        </scene>
         <!--Waiting View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -235,10 +737,17 @@
     <resources>
         <image name="background" width="375" height="812"/>
         <image name="call-me-icon" width="20" height="20"/>
+        <image name="card-system-mastercard" width="44" height="27.666666030883789"/>
+        <image name="checkmark-deselect" width="18" height="18"/>
         <image name="empty-timer" width="149" height="149"/>
         <image name="expired-timer" width="149" height="149"/>
+        <image name="payler-logo" width="353" height="74.333335876464844"/>
+        <image name="shield-icon" width="12" height="14"/>
         <namedColor name="Gray70">
             <color red="0.43500000238418579" green="0.44299998879432678" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Green">
+            <color red="0.22745098039215686" green="0.81568627450980391" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

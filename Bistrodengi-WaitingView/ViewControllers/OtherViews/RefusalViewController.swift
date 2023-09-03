@@ -11,6 +11,7 @@ import UIKit
 class RefusalViewController : UIViewController {
     
     @IBOutlet weak var changeDataButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
